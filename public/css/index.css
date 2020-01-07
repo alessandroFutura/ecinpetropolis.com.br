@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body
+{
+    margin: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h4
+{
+    font-size: 28px;
+    font-weight: bold;
+    color: #770505;
+}
+
+hr
+{
+    width: 80px;
+    margin: 0 auto 30px;
+    border: 2px solid #770505;
+}
+
+p
+{
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.container-30
+{
+    padding: 0 30px;
+}
+
+.container-45
+{
+    padding: 0 45px;
+}
+
+.container-60
+{
+    padding: 0 60px;
+}
+
+.container-120
+{
+    padding: 0 120px;
+}
+
+.header
+{
+    margin: 120px 0 100px;
+}
+
+.home
+{
+    padding: 300px 0 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center -280px;
+    background-image: url('../images/bg1.jpg');
+}
+
+.home .menu
+{
+    margin: 100px 0;
+}
+
+.home .menu a
+{
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    display: inline-block;
+    transition: color 0.4s ease 0s;
+}
+
+.home .menu a:hover
+{
+    text-decoration: none;
+    color: rgba(255, 156, 0, 1);
+}
+
+.home .text
+{
+    color: #ffffff;
+    margin: 300px 0 364px;
+    font-size: 50px;
+}
+
+.home .text span
+{
+    color: rgba(255, 156, 0, 1);
+}
+
+.history
+{
+    margin: 0 0 100px;
+}
+
+.products
+{
+    color: #ffffff;
+    padding: 400px 0 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center -80px;
+    background-image: url('../images/bg2.jpg');
+}
+
+.products h4, .contact h4
+{
+    color: #ffffff;
+}
+
+.products hr,  .contact hr
+{
+    border-color: #ffffff;
+}
+
+.products .container-60
+{
+    margin-bottom: 100px;
+}
+
+.products .product
+{
+    height: 300px;
+    margin-top: 40px;
+}
+
+.products .product .image
+{
+    width: 232px;
+    height: 220px;
+    border-radius: 14%;
+    margin: 0 auto 10px;
+    background-position: center center;
+}
+
+.products .product p
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.speaks
+{
+    margin: 100px 0;
+}
+
+.speaks blockquote
+{
+    margin-bottom: 40px;
+}
+
+.speaks blockquote i
+{
+    font-size: 52px;
+}
+
+.speaks blockquote i:nth-child(2)
+{
+    position: absolute;
+}
+
+.contact
+{
+    color: #ffffff;
+    padding: 300px 0 80px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url('../images/bg3.jpg');
+}
+
+.contact #map
+{
+    height: 600px;
+    margin: 40px 60px;
+}
+
+.contact #map .gm-style-iw
+{
+    color: #333333;
+}
+
+.contact form
+{
+    width: 480px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form button
+{
+    color: #ffffff !important;
+    background-color: #770505;
+}
+
+.contact .contacts
+{
+    margin-top: 60px;
+}
+
+.contact .contacts i
+{
+    color: #770505;
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+.contact .contacts a
+{
+    color: #ffffff;
+}
+
+@media( max-width: 1199px )
+{
+
+}
+
+@media( max-width: 991px )
+{
+    .products{
+        background-size: 200% 100%;
+    }
+}
+
+@media( max-width: 767px )
+{
+    .header{
+        margin: 60px 50px;
+    }
+    .header img{
+        max-width: 100%;
+    }
+    .home{
+        padding: 0 0 400px;
+    }
+    .home .menu{
+        display: none;
+    }
+    .home .text{
+        margin: 364px 0 300px;
+    }
+    .history{
+        margin: 0 0 80px;
+    }
+    .products{
+        padding: 200px 0 300px;
+        background-size: 288% 100%;
+        background-position: center -200px;
+    }
+    .products .product{
+        height: 200px;
+    }
+    .products .product p{
+        font-size: 14px;
+    }
+    .products .product .image{
+        width: 138px;
+        height: 138px;
+    }
+    .speaks{
+        margin: 0;
+    }
+    .contact{
+        padding: 300px 0 0;
+        background-size: 200% 100%;
+    }
+    .contact p{
+        font-size: 14px;
+    }
+    .contact .container{
+        padding: 0;
+    }
+    .contact form{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contact #map{
+        height: 380px;
+        margin: 40px 0;
+    }
+}
+
+#modal
+{
+    z-index: 1091;
+    text-align: left;
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    top: 50%;
+    margin: 0 auto;
+}
+
+#modal .modal-content
+{
+    color: #333;
+}
+
+#modal .modal-content .modal-header
+{
+    border-bottom-color: #770505;
+}
+
+#modal .modal-content .modal-header h5
+{
+    font-size: 22px;
+}
+
+#modal .modal-content .modal-header h5 i
+{
+    color: #770505;
+    margin-right: 8px;
+}
+
+#modal .modal-content .modal-header button
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#modal .modal-content .modal-body
+{
+    padding: 15px 46px;
+}
+
+#modal .modal-content .modal-footer
+{
+    border-top-color: #770505;
+}
+
+#modal .modal-content .modal-footer button
+{
+    color: #fff;
+    background-color: #770505;
+    border-color: #770505;
+}
+
+#modal .modal-content .modal-footer button:hover
+{
+    background-color: #770505;
+    border-color: #770505;
+}
+
+#loader
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    z-index: 1000;
+}
+
+#loader .spinner
+{
+    margin: auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(2);
+}
+
+#loader .spinner > div
+{
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+#loader .spinner .rect2
+{
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+#loader .spinner .rect3
+{
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+#loader .spinner .rect4
+{
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+#loader .spinner .rect5
+{
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay
+{
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay
+{
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}

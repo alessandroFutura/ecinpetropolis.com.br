@@ -1,0 +1,26 @@
+<div tabindex="0"
+     role="button"
+     class="move-top-btn"
+     id="main"
+     enter-event="moveToTop()"
+     ng-click="moveToTop();$event.preventDefault();$event.stopPropagation();"
+     aria-label="back to the top of the page"
+     ng-style="{ 'border-width': params.borderWidth, 'width': sizes.frameW, 'height': sizes.frameH }"
+     ng-class="{ 'inactive': inactive }"
+     back-to-top>
+  <div id="controls">
+    <div id="arrow" ng-hide="params.iconStyle === 'text'"
+         ng-class="{ 'both': params.iconStyle === 'icon-text' }"
+         ng-style="{ 'height': sizes.iconH, 'top': sizes.top + params.borderWidth }">
+      <div ng-include="iconImageSrc"></div>
+    </div>
+    <p id="text" ng-hide="params.iconStyle === 'icon'"
+       ng-class="{ 'both': params.iconStyle === 'icon-text' }"
+       ng-style="{ 'bottom': sizes.bottom + params.borderWidth, 'text-align': params.textAlignment,
+                   'margin-left': defaultMargins + sizes.marginBorders,
+                   'margin-right': defaultMargins + sizes.marginBorders }" ng-bind="text">
+
+    </p>
+  </div>
+  <p id="test" ng-class="{ 'both': params.iconStyle === 'icon-text' }">{{ text }}</p>
+</div>
